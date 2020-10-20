@@ -1,0 +1,16 @@
+[development]
+dev ansible_host=192.168.0.100 ansible_port=2201 ansible_user=vagrant
+
+[testing]
+test ansible_host=192.168.0.100 ansible_port=2203 ansible_user=vagrant
+
+[staging]
+stag ansible_host=192.168.0.100 ansible_port=2202 ansible_user=vagrant
+
+[production]
+prod ansible_host=192.168.0.100 ansible_user=boris
+
+[iaas:children]
+development
+testing
+

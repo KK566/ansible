@@ -1,0 +1,6 @@
+---
+# tasks file for define_content
+
+- name: define content of /etc/issue as variable
+  shell: cat /etc/issue
+  register: content

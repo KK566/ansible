@@ -1,0 +1,8 @@
+---
+# tasks file for create_empty_file
+
+- name: creating an empty file /etc/iaac with rigths 0500
+  copy:
+      dest: "/etc/iaac"
+      content: ""
+      mode: 0500
